@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="29px" viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 20</title>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-Page-female" transform="translate(-938.000000, -2363.000000)">
+            <g id="Group-10" transform="translate(94.000000, 2342.000000)">
+                <g id="Group-20" transform="translate(844.000000, 21.000000)">
+                    <circle id="Oval" fill="#FFFFFF" cx="14.5" cy="14.5" r="14.5"></circle>
+                    <g id="heart-icon" transform="translate(6.000000, 7.000000)" fill="#02020A">
+                        <path d="M12.3116286,1.21680443e-13 C11.100067,1.21680443e-13 9.9399981,0.487977864 9.09523715,1.35294812 L8.4323696,2.03361972 L7.76309588,1.35294812 C6.91836115,0.487993949 5.75832037,1.21680443e-13 4.5467888,1.21680443e-13 C3.33525724,1.21680443e-13 2.17521644,0.487993949 1.33048175,1.35294812 C-0.443493918,3.17578337 -0.443493918,6.07221645 1.33048175,7.89505167 L8.4323696,15.1111109 L15.5278513,7.89505167 C17.301827,6.07221645 17.301827,3.17578337 15.5278513,1.35294812 C14.6831311,0.488019629 13.5231315,1.21680443e-13 12.3116286,1.21680443e-13 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

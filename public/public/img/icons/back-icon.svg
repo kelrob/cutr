@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="27px" viewBox="0 0 27 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 10</title>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Cart-Page" transform="translate(-1236.000000, -147.000000)">
+            <g id="Group-7" transform="translate(1228.000000, 126.000000)">
+                <g id="Group-9">
+                    <g id="Group-10" transform="translate(8.000000, 21.000000)">
+                        <circle id="Oval" fill="#FAFAFA" cx="13.5" cy="13.5" r="13.5"></circle>
+                        <g id="arrow-right" transform="translate(14.000000, 13.500000) scale(-1, 1) translate(-14.000000, -13.500000) translate(7.000000, 10.000000)" fill="#02020A">
+                            <polygon id="Path" points="7.95807864e-13 2.91666912 12.3111201 2.91666912 10.7111202 0.816669117 11.3333201 0 14 3.5000049 11.3333201 7 10.7111202 6.18331618 12.3111201 4.08333578 7.95807864e-13 4"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

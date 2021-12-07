@@ -1,49 +1,33 @@
-<!DOCTYPE html>
-<html>
-
-<head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
-    <meta name="author" content="Creative Tim">
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Admin :: Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
-    <!-- Icons -->
-    <link rel="stylesheet" href="{{ url('assets/vendor/nucleo/css/nucleo.css') }}" type="text/css">
-    <link rel="stylesheet" href="{{ url('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}"
-        type="text/css">
-    <!-- Page plugins -->
-    <!-- Argon CSS -->
-    <link rel="stylesheet" href="{{ url('assets/css/argon.css?v=1.2.0') }}" type="text/css">
-    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <link rel="stylesheet" href="{{ url('public/css/style.css') }}">
+    <link rel="stylesheet" href="{{ url('public/css/themify-icons.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
 
-    <script>
-        tinymce.init({
-            selector: '#mytextarea',
-            height: "380"
-        });
-    </script>
-</head>
+    <title>Login</title>
+  </head>
+  <body>
+    <div id="app">
+        
 
-<body>
-
-    @yield('main-section')
-
-    <!-- Core -->
-    <script src="{{ url('assets/vendor/jquery/dist/jquery.min.js') }}"></script>
-    <script src="{{ url('assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ url('assets/vendor/js-cookie/js.cookie.js') }}"></script>
-    <script src="{{ url('assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js') }}"></script>
-    <script src="{{ url('assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js') }}"></script>
-    <!-- Optional JS -->
-    <script src="{{ url('assets/vendor/chart.js/dist/Chart.min.js') }}"></script>
-    <script src="{{ url('assets/vendor/chart.js/dist/Chart.extension.js') }}"></script>
-    <!-- Argon JS -->
-    <script src="{{ url('assets/js/argon.js?v=1.2.0') }}"></script>
-</body>
-
+        <main>
+            @yield('content')
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <script src="{{ url('public/js/custom.js') }}"></script>
+    
+  </body>
 </html>

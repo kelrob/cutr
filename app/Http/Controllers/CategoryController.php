@@ -20,7 +20,7 @@ class CategoryController extends Controller
         $newCategory = Category::create([
             'name' => $request->name,
             'cover_photo' => $imageLink,
-            'slug' => Str::slug($request->slug, '-'),
+            'slug' => Str::slug($request->name, '-'),
         ]);
 
         if ($newCategory) {
@@ -30,6 +30,8 @@ class CategoryController extends Controller
 
     public function newSubCategory(AddSubCategoryRequest $request)
     {
+
+        // dd($request->all());
         $image = $request->image;
         $imageName = time() . '.' . $image->extension();
         $image->move(public_path("/category"), $imageName);
@@ -38,7 +40,7 @@ class CategoryController extends Controller
         $newCategory = SubCategory::create([
             'name' => $request->name,
             'cover_photo' => $imageLink,
-            'slug' => Str::slug($request->slug, '-'),
+            'slug' => Str::slug($request->name, '-'),
         ]);
 
         if ($newCategory) {

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="29px" viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>facebook</title>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Single-Product" transform="translate(-908.000000, -817.000000)">
+            <g id="facebook" transform="translate(908.000000, 817.000000)">
+                <rect id="Rectangle" x="0" y="0" width="29" height="29"></rect>
+                <circle id="Oval" stroke="#02020A" cx="14.5" cy="14.5" r="14"></circle>
+                <path d="M15.6548127,23 L12.550972,23 L12.550972,15.4990533 L11,15.4990533 L11,12.9144787 L12.550972,12.9144787 L12.550972,11.3627872 C12.550972,9.25441808 13.4262684,8 15.9146515,8 L17.9857752,8 L17.9857752,10.5855213 L16.6913229,10.5855213 C15.7226174,10.5855213 15.658606,10.9466991 15.658606,11.6207713 L15.6543385,12.9144787 L18,12.9144787 L17.7254623,15.4990533 L15.6543385,15.4990533 L15.6543385,23 L15.6548127,23 Z" id="Shape" fill="#02020A"></path>
+            </g>
+        </g>
+    </g>
+</svg>

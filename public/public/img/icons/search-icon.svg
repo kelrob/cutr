@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>search-icon</title>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Landing-Page-female" transform="translate(-1283.000000, -32.000000)" stroke="#FFFFFF">
+            <g id="Navbar">
+                <g id="search-icon" transform="translate(1284.000000, 33.000000)">
+                    <path d="M5.74161628,11.4832326 C8.91262339,11.4832326 11.4832326,8.91262339 11.4832326,5.74161628 C11.4832326,2.57060917 8.91262339,0 5.74161628,0 C2.57060917,0 0,2.57060917 0,5.74161628 C0,8.91262339 2.57060917,11.4832326 5.74161628,11.4832326 Z M14,14 L10.0478285,10.0478285" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
