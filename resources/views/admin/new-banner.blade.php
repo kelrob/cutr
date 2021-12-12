@@ -45,6 +45,20 @@
                                     enctype="multipart/form-data">
                                     @csrf
                                     <div class="form-group">
+                                        <label for="location">Location</label>
+                                        <select name="location"
+                                            class="form-control @error('location') is-invalid @enderror">
+                                            <option value="hero_banner">Hero Banner</option>
+                                            <option value="sale_banner">Sale Banner</option>
+                                            <option value="featured_bannner">Featured Banner</option>
+                                        </select>
+                                        @error('location')
+                                            <span class=" invalid-feedback" role="alert">
+                                                {{ $message }}
+                                            </span>
+                                        @enderror
+                                    </div>
+                                    <div class="form-group">
                                         <label for="banner"> Banner</label>
                                         <input type="file" name="banner"
                                             class="form-control @error('banner') is-invalid @enderror" />

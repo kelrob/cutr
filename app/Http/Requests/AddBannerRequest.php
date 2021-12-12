@@ -24,6 +24,7 @@ class AddBannerRequest extends FormRequest
     public function rules()
     {
         return [
+            'location' => 'required',
             'banner' => 'required',
             'banner_heading' => 'required',
             'banner_sub_heading' => 'required',

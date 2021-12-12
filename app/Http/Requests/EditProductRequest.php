@@ -26,6 +26,7 @@ class EditProductRequest extends FormRequest
         return [
             'id' => 'required',
             'name' => 'required',
+            'type' => 'required',
             'category_id' => 'required',
             'amount' => 'required',
             'goods_in_stock' => 'required',

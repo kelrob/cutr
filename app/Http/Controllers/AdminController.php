@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Admin;
-use App\Models\User;
 use App\Models\Banner;
 use App\Models\Category;
 use App\Models\Color;
@@ -12,9 +10,7 @@ use App\Models\Order;
 use App\Models\Product;
 use App\Models\SubCategory;
 use App\Models\Testimonial;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
+use App\Models\User;
 
 class AdminController extends Controller
 {
@@ -33,7 +29,6 @@ class AdminController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-
 
     public function index()
     {
@@ -54,7 +49,8 @@ class AdminController extends Controller
     {
         $categories = Category::orderBy('created_at', 'DESC')->get();
         $subCategories = SubCategory::orderBy('created_at', 'DESC')->get();
-        return view('admin.new-product', compact('categories', 'subCategories'));
+        $colors = Color::all();
+        return view('admin.new-product', compact('categories', 'subCategories', 'colors'));
     }
 
     public function viewProduct($id)
@@ -68,8 +64,8 @@ class AdminController extends Controller
     {
         $categories = Category::orderBy('created_at', 'DESC')->get();
         $product = Product::with('user', 'product_images', 'category')->where('id', $id)->first();
-
-        return view('admin.edit-product', compact('product', 'categories'));
+        $colors = Color::all();
+        return view('admin.edit-product', compact('product', 'categories', 'colors'));
     }
 
     public function orders()

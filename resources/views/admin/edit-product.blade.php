@@ -73,6 +73,8 @@
                                         @enderror
                                     </div>
 
+
+
                                     <div class="row">
                                         <div class="form-group col-lg-6">
                                             <label for="amount">Amount</label>
@@ -98,6 +100,20 @@
                                         </div>
                                     </div>
 
+                                    <div class="row">
+                                        <div class="form-group col-lg-12">
+                                            <label for="type">Type</label>
+                                            <select class="form-control @error('type') is-invalid @enderror" name="type">
+                                                <option value="Men">Men</option>
+                                                <option value="Women">Women</option>
+                                            </select>
+                                            @error('type')
+                                                <span class="invalid-feedback" role="alert">
+                                                    {{ $message }}
+                                                </span>
+                                            @enderror
+                                        </div>
+                                    </div>
 
                                     <div class="form-group">
                                         <label for="description" id="description">Description</label>

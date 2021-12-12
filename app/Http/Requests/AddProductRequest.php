@@ -28,6 +28,7 @@ class AddProductRequest extends FormRequest
             'category_id' => 'required',
             'sub_category_id' => 'required',
             'amount' => 'required',
+            'type' => 'required',
             'goods_in_stock' => 'required',
             'file.*' => 'required|mimes:jpg,jpeg,png,bmp|max:20000',
             'description' => 'required',

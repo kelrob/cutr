@@ -14,7 +14,8 @@
 
                         </div>
                         <div class="col-lg-6 col-5 text-right">
-                            <a href="{{ url('/admin/color/new') }}" class="btn btn-sm btn-neutral"><i class="ni ni-fat-add"></i>
+                            <a href="{{ url('/admin/color/new') }}" class="btn btn-sm btn-neutral"><i
+                                    class="ni ni-fat-add"></i>
                                 New Color</a>
                         </div>
                     </div>
@@ -72,7 +73,7 @@
                                                         </button>
                                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                             <a class="dropdown-item"
-                                                                href="{{ url('edit-color/' . base64_encode($color->id)) }}">Edit
+                                                                href="{{ url('/admin/edit-color/' . base64_encode($color->id)) }}">Edit
                                                                 Color</a>
                                                             <a class="dropdown-item" href="#"
                                                                 onclick="deleteItem({{ $color->id }})">Delete

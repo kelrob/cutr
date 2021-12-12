@@ -41,6 +41,9 @@
                                             aria-label="close">&times;</a> {{ session('success') }}
                                     </div>
                                 @endif
+                                @if ($errors->any())
+                                    {!! implode('', $errors->all('<div class="alert alert-danger">:message</div>')) !!}
+                                @endif
                                 <form class="p-4" method="POST" action="{{ url('/admin/add-product') }}"
                                     enctype="multipart/form-data">
                                     @csrf
@@ -89,8 +92,14 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="color">Select Color</label>
-                                        <input type="color" name="color" class="form-control" />
+                                        <label for="color">Select Colors Available</label><br />
+
+                                        @foreach ($colors as $color)
+                                            <input type="checkbox" name="color[]" value="{{ $color->id }}"
+                                                style="accent-color: {{ $color->color_code }}" />
+                                            {{ $color->name }} <br />
+                                        @endforeach
+                                        {{-- <input type="color" name="color" class="form-control" /> --}}
                                     </div>
 
                                     <div class="row">
@@ -118,15 +127,30 @@
                                         </div>
                                     </div>
 
-                                    <div class="form-group">
-                                        <label for="file">Images</label>
-                                        <input type="file" name="file[]" multiple id="file"
-                                            class="form-control @error('file') is-invalid @enderror">
-                                        @error('file')
-                                            <span class="invalid-feedback" role="alert">
-                                                {{ $message }}
-                                            </span>
-                                        @enderror
+                                    <div class="row">
+                                        <div class="form-group col-lg-6">
+                                            <label for="file">Images</label>
+                                            <input type="file" name="file[]" multiple id="file"
+                                                class="form-control @error('file') is-invalid @enderror">
+                                            @error('file')
+                                                <span class="invalid-feedback" role="alert">
+                                                    {{ $message }}
+                                                </span>
+                                            @enderror
+                                        </div>
+
+                                        <div class="form-group col-lg-6">
+                                            <label for="type">Type</label>
+                                            <select class="form-control @error('type') is-invalid @enderror" name="type">
+                                                <option value="Men">Men</option>
+                                                <option value="Women">Women</option>
+                                            </select>
+                                            @error('type')
+                                                <span class="invalid-feedback" role="alert">
+                                                    {{ $message }}
+                                                </span>
+                                            @enderror
+                                        </div>
                                     </div>
 
                                     <div class="form-group">

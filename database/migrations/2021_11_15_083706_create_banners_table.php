@@ -20,6 +20,7 @@ class CreateBannersTable extends Migration
             $table->string('banner_sub_heading')->nullable();
             $table->string('cta_btn_text')->nullable();
             $table->string('cta_btn_link')->nullable();
+            $table->string('location');
             $table->timestamps();
         });
     }

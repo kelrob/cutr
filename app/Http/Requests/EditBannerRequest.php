@@ -24,6 +24,7 @@ class EditBannerRequest extends FormRequest
     public function rules()
     {
         return [
+            'location' => 'required',
             'banner_heading' => 'required',
             'banner_sub_heading' => 'required',
             'cta_btn_text' => 'required',

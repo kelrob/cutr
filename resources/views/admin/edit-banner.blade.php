@@ -46,6 +46,23 @@
 
                                     <input type="hidden" name="id" value="{{ $banner->id }}" />
                                     <div class="form-group">
+                                        <label for="location">Location</label>
+                                        <select name="location"
+                                            class="form-control  @error('location') is-invalid @enderror">
+                                            <option value="{{ $banner->location }}">
+                                                {{ remove_underscores($banner->location) }}
+                                            <option>
+                                            <option value="hero_banner">Hero Banner</option>
+                                            <option value="sale_banner">Sale Banner</option>
+                                            <option value="featured_bannner">Featured Banner</option>
+                                        </select>
+                                        @error('location')
+                                            <span class=" invalid-feedback" role="alert">
+                                                {{ $message }}
+                                            </span>
+                                        @enderror
+                                    </div>
+                                    <div class="form-group">
                                         <label>Banner Heading</label>
                                         <input type="text" name="banner_heading"
                                             class="form-control @error('banner_heading') is-invalid @enderror"

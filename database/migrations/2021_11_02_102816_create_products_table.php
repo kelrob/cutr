@@ -24,6 +24,7 @@ class CreateProductsTable extends Migration
             $table->integer('goods_in_stock');
             $table->boolean('visible')->default(true);
             $table->string('color', 20)->nullable();
+            $table->string('type');
             $table->foreign('category_id')->references('id')->on('categories');
             $table->foreign('sub_category_id')->references('id')->on('sub_categories');
             $table->timestamps();
