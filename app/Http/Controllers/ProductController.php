@@ -33,6 +33,7 @@ class ProductController extends Controller
             'amount' => $request->amount,
             'color' => $colors,
             'type' => $request->type,
+            'sale' => $request->sale == "true" ? true : false,
             'goods_in_stock' => $request->goods_in_stock,
         ]);
 
@@ -65,6 +66,7 @@ class ProductController extends Controller
             'amount' => $request->amount,
             'color' => $colors,
             'type' => $request->type,
+            'sale' => $request->sale == "true" ? true : false,
             'goods_in_stock' => $request->goods_in_stock,
         ]);
 

@@ -32,6 +32,7 @@ class AddProductRequest extends FormRequest
             'goods_in_stock' => 'required',
             'file.*' => 'required|mimes:jpg,jpeg,png,bmp|max:20000',
             'description' => 'required',
+            'sale' => 'required',
         ];
     }
 }

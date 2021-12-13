@@ -31,6 +31,7 @@ class EditProductRequest extends FormRequest
             'amount' => 'required',
             'goods_in_stock' => 'required',
             'description' => 'required',
+            'sale' => 'required',
         ];
     }
 }

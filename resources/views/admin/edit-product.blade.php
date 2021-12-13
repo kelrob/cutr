@@ -104,6 +104,7 @@
                                         <div class="form-group col-lg-12">
                                             <label for="type">Type</label>
                                             <select class="form-control @error('type') is-invalid @enderror" name="type">
+                                                <option value="{{ $product->type }}">{{ $product->type }}</option>
                                                 <option value="Men">Men</option>
                                                 <option value="Women">Women</option>
                                             </select>
@@ -112,6 +113,27 @@
                                                     {{ $message }}
                                                 </span>
                                             @enderror
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <label for="type">Mark this product for sale?</label>
+                                                <select name="sale"
+                                                    class="form-control @error('sale') is-invalid @enderror">
+                                                    <option value="{{ $product->sale == true ? 'true' : 'false' }}">
+                                                        {{ $product->sale == true ? 'Yes' : 'No' }}
+                                                    <option>
+                                                    <option value="true">Yes</option>
+                                                    <option value="false">No</option>
+                                                </select>
+                                                @error('sale')
+                                                    <span class="invalid-feedback" role="alert">
+                                                        {{ $message }}
+                                                    </span>
+                                                @enderror
+                                            </div>
                                         </div>
                                     </div>
 

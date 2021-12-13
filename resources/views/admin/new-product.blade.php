@@ -153,6 +153,24 @@
                                         </div>
                                     </div>
 
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <label for="type">Mark this product for sale?</label>
+                                                <select name="sale"
+                                                    class="form-control @error('sale') is-invalid @enderror">
+                                                    <option value="true">Yes</option>
+                                                    <option value="false">No</option>
+                                                </select>
+                                                @error('sale')
+                                                    <span class="invalid-feedback" role="alert">
+                                                        {{ $message }}
+                                                    </span>
+                                                @enderror
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <div class="form-group">
                                         <label for="description" id="description">Description</label>
                                         <textarea id="mytextarea" class="@error('description') is-invalid @enderror"
