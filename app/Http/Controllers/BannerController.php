@@ -18,6 +18,7 @@ class BannerController extends Controller
 
         $uploadBanner = Banner::create([
             'banner_url' => $bannerLink,
+            'location' => $request->location,
             'banner_heading' => $request->banner_heading,
             'banner_sub_heading' => $request->banner_sub_heading,
             'cta_btn_text' => $request->cta_btn_text,
@@ -35,6 +36,7 @@ class BannerController extends Controller
 
         $updateBanner = $banner->update([
             'banner_heading' => $request->banner_heading,
+            'location' => $request->location,
             'banner_sub_heading' => $request->banner_sub_heading,
             'cta_btn_text' => $request->cta_btn_text,
             'cta_btn_link' => $request->cta_btn_link,
